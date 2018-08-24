@@ -18,7 +18,7 @@
                            />
                 <EntryCell x:Name="numPer"
                            Label="Numero de personas"
-                           Placeholder="Ingrese el numro de personas"
+                           Placeholder="Ingrese el numero de personas"
                            />
 
             </TableSection>
