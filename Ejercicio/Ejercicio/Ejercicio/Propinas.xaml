@@ -31,7 +31,18 @@
             </TableSection>
 
             <TableSection Title="Resultado">
-                
+                <TextCell x:Name="txtPropina"
+                          Text="Propina"
+                          />
+                <TextCell x:Name="txtTotal"
+                          Text="Total"
+                          />
+                <TextCell x:Name="txtPropinaPer"
+                          Text="Propina por persona"
+                          />
+                <TextCell x:Name="txtTotalPer"
+                          Text="Total por persona"
+                          />
             </TableSection>
         </TableView>
     	
