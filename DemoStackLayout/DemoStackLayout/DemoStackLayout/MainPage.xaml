@@ -4,11 +4,22 @@
              xmlns:local="clr-namespace:DemoStackLayout"
              x:Class="DemoStackLayout.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout Orientation="Horizontal">
+        <Button BackgroundColor="Salmon"
+                Text="Fill"
+                VerticalOptions="Fill"/>
+
+        <Button BackgroundColor="Salmon"
+                Text="Start"
+                VerticalOptions="Start"/>
+
+        <Button BackgroundColor="Salmon"
+                Text="End"
+                VerticalOptions="End"/>
+
+        <Button BackgroundColor="Salmon"
+                Text="Center"
+                VerticalOptions="Center"/>
     </StackLayout>
 
 </ContentPage>
