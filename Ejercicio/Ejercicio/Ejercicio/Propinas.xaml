@@ -5,10 +5,36 @@
              x:Class="Ejercicio.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <TableView>
+            <TableSection Title="Datos Generales">
+                
+                <EntryCell x:Name="tot"
+                           Label="Total"
+                           Placeholder="Ingrese valor total"
+                           />
+                <EntryCell x:Name="prop"
+                           Label="Propina"
+                           Placeholder="Ingrese valor de la propina"
+                           />
+                <EntryCell x:Name="numPer"
+                           Label="Numero de personas"
+                           Placeholder="Ingrese el numro de personas"
+                           />
+
+            </TableSection>
+
+            <TableSection Title="Calcular">
+                <ViewCell>
+                    <Button x:Name="btnCalcular"
+                            Text="Calcular"/>
+                </ViewCell>
+            </TableSection>
+
+            <TableSection Title="Resultado">
+                
+            </TableSection>
+        </TableView>
+    	
     </StackLayout>
 
 </ContentPage>
