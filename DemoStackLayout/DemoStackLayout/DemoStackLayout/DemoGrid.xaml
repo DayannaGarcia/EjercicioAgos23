@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemoStackLayout.DemoGrid">
+    <ContentPage.Content>
+        <Grid ColumnSpacing="0"
+              RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"
+                               />
+                <RowDefinition Height="2*"
+                               />
+                <RowDefinition Height="auto"
+                               />
+                <RowDefinition Height="200"
+                               />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="2*"
+                                  />
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <BoxView BackgroundColor="Aqua"
+                     Grid.Row="0"
+                     Grid.Column="0"/>
+            <BoxView BackgroundColor="Blue"
+                     Grid.Row="0"
+                     Grid.Column="1"
+                     />
+            <BoxView BackgroundColor="Green"
+                     Grid.Row="0"
+                     Grid.Column="2"
+                     />
+            <BoxView BackgroundColor="Gray"
+                     Grid.Row="0"
+                     Grid.ColumnSpan="2"
+                     />
+
+            <BoxView BackgroundColor="Red"
+                     Grid.Row="1"
+                     Grid.Column="0"
+                     />
+            <BoxView BackgroundColor="Yellow"
+                     Grid.Row="1"
+                     Grid.Column="1"
+                     />
+            <BoxView BackgroundColor="Silver"
+                     Grid.Row="1"
+                     Grid.Column="2"
+                     />
+            <BoxView BackgroundColor="Aqua"
+                     Grid.Row="2"
+                     Grid.Column="0"
+                     />
+            <BoxView BackgroundColor="Blue"
+                     Grid.Row="2"
+                     Grid.Column="1"
+                     />
+            <BoxView BackgroundColor="Green"
+                     Grid.Row="2"
+                     Grid.Column="2"
+                     />
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
