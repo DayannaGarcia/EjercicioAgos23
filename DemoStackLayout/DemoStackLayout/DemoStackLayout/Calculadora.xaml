@@ -3,10 +3,149 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DemoStackLayout.Calculadora">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+
+            <Button BackgroundColor="White"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="4"
+                    />
+            <Button BackgroundColor="Gray"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Text="C"
+                    Font="40"
+                    />
+            <Button BackgroundColor="Gray"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Text="+/-"
+                    Font="40"
+                    />
+            <Button BackgroundColor="Gray"
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    Text="%"
+                    Font="40"
+                    />
+            <Button BackgroundColor="Orange"
+                    Grid.Row="1"
+                    Grid.Column="3"
+                    Text="/"
+                    Font="40"
+                    TextColor="Black"
+                    />
+            <Button BackgroundColor="Silver"
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Text="7"
+                    Font="40"
+                    />
+            <Button BackgroundColor="Silver"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Text="8"
+                    Font="40"
+                    />
+            <Button BackgroundColor="Silver"
+                    Grid.Row="2"
+                    Grid.Column="2"
+                    Text="9"
+                    Font="40"
+                    />
+            <Button BackgroundColor="Orange"
+                    Grid.Row="2"
+                    Grid.Column="3"
+                    Text="x"
+                    Font="40"
+                    TextColor="Black"
+                    />
+            <Button BackgroundColor="Silver"
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    Text="4"
+                    Font="40"
+                    />
+            <Button BackgroundColor="Silver"
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    Text="5"
+                    Font="40"
+                    />
+            <Button BackgroundColor="Silver"
+                    Grid.Row="3"
+                    Grid.Column="2"
+                    Text="6"
+                    Font="40"
+                    />
+            <Button BackgroundColor="Orange"
+                    Grid.Row="3"
+                    Grid.Column="3"
+                    Text="-"
+                    Font="40"
+                    TextColor="Black"
+                    />
+            <Button BackgroundColor="Silver"
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    Text="1"
+                    Font="40"
+                    />
+            <Button BackgroundColor="Silver"
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    Text="2"
+                    Font="40"
+                    />
+            <Button BackgroundColor="Silver"
+                    Grid.Row="4"
+                    Grid.Column="2"
+                    Text="3"
+                    Font="40"
+                    />
+            <Button BackgroundColor="Orange"
+                    Grid.Row="4"
+                    Grid.Column="3"
+                    Text="+"
+                    Font="40"
+                    TextColor="Black"
+                    />
+            <Button BackgroundColor="Silver"
+                    Grid.Row="5"
+                    Grid.Column="0"
+                    Text="0"
+                    Font="40"
+                    Grid.ColumnSpan="2"
+                    />
+            <Button BackgroundColor="Silver"
+                    Grid.Row="5"
+                    Grid.Column="2"
+                    Text="."
+                    Font="40"
+                    />
+            <Button BackgroundColor="Orange"
+                    Grid.Row="5"
+                    Grid.Column="3"
+                    Text="="
+                    Font="40"
+                    TextColor="Black"
+                    />
+
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
